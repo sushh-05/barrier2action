@@ -2,6 +2,10 @@
 
 Barrier2Action turns one accessibility photo into a cautious, evidence-based action report. It identifies visible barriers, separates uncertainty from observation, suggests what to photograph next, and helps route a case to a responsible reporting channel.
 
+## Live Demo
+
+[https://barrier2action.vercel.app/](https://barrier2action.vercel.app/)
+
 ## What it does
 
 - Uploads JPG, PNG, WebP, or AVIF images
@@ -18,7 +22,7 @@ Barrier2Action turns one accessibility photo into a cautious, evidence-based act
 - FastAPI + Pydantic
 - Google Gemini API via `google-genai`
 - Pillow and AVIF support
-- Render backend + Vercel frontend deployment
+- Vercel full-stack deployment with FastAPI serverless functions
 
 ## Run locally
 
@@ -43,26 +47,27 @@ npm run dev
 
 Open `http://localhost:5173`.
 
-## Deploy
+## Deploy on Vercel
 
-### Backend on Render
+Import this repository into Vercel with the repository root as the project root.
+The committed `vercel.json` builds the Vue frontend and routes `/api/*` to the
+FastAPI serverless function.
 
-Create a new Render Blueprint from this repository using `render.yaml`. Set:
-
-- `GEMINI_API_KEY`
-- `FRONTEND_ORIGIN` to the deployed Vercel URL
-
-### Frontend on Vercel
-
-Import the repository, set the project root to `frontend`, and add:
+Set these environment variables:
 
 ```text
-VITE_API_BASE_URL=https://your-render-service.onrender.com
+GEMINI_API_KEY=your_actual_key
+GEMINI_MODEL=gemini-2.5-flash-lite
+FRONTEND_ORIGIN=https://barrier2action.vercel.app
+MAX_IMAGE_MB=8
 ```
 
-Deploy after setting the environment variable.
+The live deployment is:
+
+```text
+https://barrier2action.vercel.app/
+```
 
 ## Important limitation
 
 Barrier2Action is a visual screening assistant, not professional accessibility certification or legal compliance advice. Exact dimensions, gradients, unseen routes, and legal compliance require on-site verification.
-
