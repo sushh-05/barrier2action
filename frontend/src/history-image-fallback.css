@@ -1,0 +1,1 @@
+.image-stage img[src=""],.image-stage img:not([src]){display:none}.image-stage:has(img[src=""])::after{content:"Original photo not stored for this older audit";display:grid;place-items:center;min-height:240px;color:#91a094;font-size:13px}

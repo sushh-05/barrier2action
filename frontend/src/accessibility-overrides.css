@@ -1,0 +1,9 @@
+.accessibility-trigger{font-size:0}.accessibility-trigger::before{content:"◉  Accessibility";font-size:12px;font-weight:700;letter-spacing:0}
+.app-shell{zoom:var(--user-text-scale,1);font-size:16px}
+.theme-dark .accessibility-toolbar{background:#19231b;color:#e8eee4;border-color:#304033}
+.theme-dark .accessibility-toolbar p{color:#9eaba0}
+.theme-dark .accessibility-toolbar select,.theme-dark .accessibility-toolbar input{background:#111911;color:#e8eee4;border-color:#627b6a}
+.theme-dark .toolbar-actions button,.theme-dark .font-size-control button{background:#19231b;color:#e8eee4;border-color:#627b6a}
+.theme-dark .toolbar-actions button:hover,.theme-dark .font-size-control button:hover{background:#29382b}
+.theme-light .accessibility-toolbar{color:#17231d}
+.theme-light .toolbar-actions button,.theme-light .font-size-control button{color:#17231d;background:#fff;border-color:#d4dfcf}

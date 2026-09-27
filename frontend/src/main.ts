@@ -1,0 +1,15 @@
+import { createApp } from 'vue'
+import './style.css'
+import './dark.css'
+import './enhancements.css'
+import './theme-toggle.css'
+import './theme-light.css'
+import './action-center.css'
+import './accessibility.css'
+import './accessibility-icon.css'
+import './accessibility-overrides.css'
+import './speech-controls.css'
+import './history-image-fallback.css'
+import App from './App.vue'
+
+createApp(App).mount('#app')

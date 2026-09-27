@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: barrier2action-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash-lite
+      - key: FRONTEND_ORIGIN
+        sync: false
+      - key: MAX_IMAGE_MB
+        value: "8"

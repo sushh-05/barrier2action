@@ -1,0 +1,1 @@
+.accessibility-trigger{font-size:0;display:inline-flex;align-items:center;gap:8px}.accessibility-trigger::before{content:"◉";font-size:16px;line-height:1;color:#6b8d1b}.theme-dark .accessibility-trigger::before{color:#d9ee9b}
