@@ -10,6 +10,7 @@ import './accessibility-icon.css'
 import './accessibility-overrides.css'
 import './speech-controls.css'
 import './history-image-fallback.css'
+import './logo.css'
 import App from './App.vue'
 
 createApp(App).mount('#app')
