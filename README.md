@@ -1,6 +1,6 @@
 # Barrier2Action - See the Barrier, Start the Change
 
-Barrier2Action turns one accessibility photo into a cautious, evidence-based action report. It identifies visible barriers, separates uncertainty from observation, suggests what to photograph next, and helps route a case to a responsible reporting channel.
+🏆 **1st Place — Campulsy Hack Days × MLH × Gemini**
 
 ## Live Demo
 
